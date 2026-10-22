@@ -12,6 +12,8 @@
 
 ---
 
+</div>
+
 ## 简介
 
 `dsh-panel-skills` 是一个 DSH 社区插件，为侧边栏提供独立的 Skills 管理面板。

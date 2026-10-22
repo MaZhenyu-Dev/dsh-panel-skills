@@ -12,6 +12,8 @@ For **DSH (DeepSeek Harness) Desktop** · Verified on Windows · No build step
 
 ---
 
+</div>
+
 ## Introduction
 
 `dsh-panel-skills` is a DSH community plugin that adds a standalone Skills management panel to the sidebar.
