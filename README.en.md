@@ -216,7 +216,7 @@ To investigate host-side issues, configure:
 - Only user-level skill directories are actually moved; workspace, custom-path, and bundled skills may take effect through shadowing only.
 - Preset scopes must be registered one by one; if the host cannot access a scope, the reason is recorded.
 - By default, the panel shows the workspace of the most recently updated session that has a `cwd`.
-- Open conversations may cache an old `/` skill list; start a new conversation or re-fetch it when necessary.
+- Open conversations may cache an old `/` skill list; start a new conversation, or press **Refresh** in the panel's top-right corner.
 - Disabling a skill does not clear context the model has already received.
 - Safe uninstall handles only directories managed by this plugin.
 - Verified on Windows; macOS / Linux are untested.
@@ -226,7 +226,7 @@ To investigate host-side issues, configure:
 | Symptom | What to do |
 | --- | --- |
 | No Skills entry | Confirm the plugin is enabled, reload the page, and check the DSH version. |
-| Skill still appears in the `/` menu after disabling | Start a new conversation or re-fetch the skill list. |
+| Skill still appears in the `/` menu after disabling | Start a new conversation, or press **Refresh** in the panel. |
 | Always shows "Unconfirmed" | Check `errors`, `parked`, and `roots` in the diagnostics. |
 | Safe uninstall is unavailable | Resolve the directory or record blocking the safe uninstall, using the blocker shown in the message. |
 | Skill is missing after disabling | Check `.dsh-panel-skills-disabled/skills/` and `records/`. |
