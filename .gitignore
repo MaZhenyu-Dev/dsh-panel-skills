@@ -1,0 +1,88 @@
+# ---------------------------------------------------------------------------
+# dsh-panel-skills
+#
+# Tracked files are the package itself:
+#   package.json, cordis.patch.yml, lib/*.js, assets/icon.svg,
+#   README.md, README.en.md, CHANGELOG.md, .gitignore
+# Everything below is local, generated, or machine-specific.
+# ---------------------------------------------------------------------------
+
+# --- Dependencies ----------------------------------------------------------
+node_modules/
+.pnpm-store/
+.yarn/
+# Local install artifacts. The checkout needs one runtime dependency for a
+# link: install; the host profile owns the actual dependency resolution.
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# --- Logs ------------------------------------------------------------------
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# --- Caches, scratch, and debug residue ------------------------------------
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+.tmp/
+.tmp-*
+tmp/
+temp/
+*.tmp
+*.temp
+*.heapsnapshot
+*.cpuprofile
+
+# --- Test and coverage output ---------------------------------------------
+coverage/
+.nyc_output/
+test-results/
+playwright-report/
+
+# --- Build output ----------------------------------------------------------
+# This package has no build step; these are ignored in case one is added.
+dist/
+build/
+out/
+*.tsbuildinfo
+
+# --- Local DSH state -------------------------------------------------------
+# Parked skills normally live under $DSH_HOME, not in this checkout. These
+# rules only protect against a redirected DSH_HOME or a local test run.
+.dsh/
+.dsh-panel-skills-disabled/
+.mcp-skills-panel-disabled/
+
+# --- Backups written by the profile row writer -----------------------------
+*.bak
+*.bak-*
+*.orig
+*.rej
+
+# --- Environment and secrets ----------------------------------------------
+.env
+.env.*
+!.env.example
+.npmrc
+
+# --- Editor and OS noise ---------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Package archives ------------------------------------------------------
+*.tgz
+*.tar.gz
+*.zip

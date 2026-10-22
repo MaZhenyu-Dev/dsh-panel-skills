@@ -1,0 +1,51 @@
+{
+  "name": "dsh-panel-skills",
+  "version": "0.1.0",
+  "private": true,
+  "description": "DSH sidebar panel for Skills: list, enable/disable, and genuinely remove a disabled skill from the catalog.",
+  "icon": "assets/icon.svg",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "compatibility": {
+      "dshReleases": {
+        "0.2.1-rc.2": "compatible"
+      }
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-api-remotes",
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ],
+      "platform": "web"
+    }
+  },
+  "dependencies": {
+    "@deepseek-ai/schemastery": "~3.18.5"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "~4.0.4"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "lib/panel-rows.js",
+    "assets/icon.svg",
+    "README.md",
+    "cordis.patch.yml"
+  ]
+}

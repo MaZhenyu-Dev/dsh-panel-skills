@@ -1,0 +1,10 @@
+<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Skills">
+  <defs>
+    <linearGradient id="skillsPanelSpark" x1="16" y1="6.5" x2="16" y2="27" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#45E7A4"/>
+      <stop offset="1" stop-color="#05909D"/>
+    </linearGradient>
+  </defs>
+  <path d="M16 6.3c1.05 5.2 3.55 7.7 8.75 8.75-5.2 1.05-7.7 3.55-8.75 8.75-1.05-5.2-3.55-7.7-8.75-8.75 5.2-1.05 7.7-3.55 8.75-8.75Z" fill="url(#skillsPanelSpark)"/>
+  <path d="M27.2 19.9c.62 3.06 2.09 4.53 5.15 5.15-3.06.62-4.53 2.09-5.15 5.15-.62-3.06-2.09-4.53-5.15-5.15 3.06-.62 4.53-2.09 5.15-5.15Z" fill="#54ECE7"/>
+</svg>
