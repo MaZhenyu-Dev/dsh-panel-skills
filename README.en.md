@@ -139,7 +139,12 @@ If a skill has no file path (for example, a bundled skill), the panel says so ex
 
 ### Filter
 
-Type a name, description, or when-to-use phrase to filter skills.
+Type a name, description, or when-to-use phrase to filter skills. The search
+field keeps the static “Filter by name or description” placeholder and supports
+space-separated terms, recent searches, and name suggestions. Pressing `Enter`
+or picking a suggestion records the query (up to five); Tab completes skill
+names. The status filter can show only enabled or only disabled skills, and rows
+keep their enter/exit transitions.
 
 ## Safe uninstall
 
@@ -187,6 +192,10 @@ The plugin follows these principles:
 - report unknown directories without moving or deleting them;
 - a failure on one skill does not affect the others;
 - use `rename` only; never copy, overwrite, or delete skill content.
+
+Recent searches live only in the local browser `localStorage` (key
+`dsh-panel-skills:search-recents`); they are never sent with a plugin request,
+and Clear removes them.
 
 ## Configuration
 
