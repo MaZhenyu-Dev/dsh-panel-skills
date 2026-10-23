@@ -7,6 +7,34 @@ follow [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 The package is one half of the former `dsh-plugin-mcp-skills` monolith. Its
 version starts at 0.1.0; the split point is the monolith's 0.5.0.
 
+## [0.2.0] — 2026-10-23
+
+### Changed
+
+- **Skills panel redesigned around the liquid-glass reference.** The page now
+  carries the reference layout and motion: sticky search/filter zone, segmented
+  status filter with rolling counts, status dots, the DSH-matched switch, row
+  entrance/stagger, the expandable detail card, the empty state, copy-path and
+  copy-SKILL.md actions, and the glass toast.
+- **Host `Switch` restored.** The row now uses the shared `Switch` primitive
+  (36 × 20, 16 px thumb, 2 px padding, 0.12 s thumb transition) instead of the
+  larger reference switch, so it stays consistent with the rest of DSH.
+- **Neutral glass search.** The placeholder is the single static
+  `按名称或者描述过滤` (English: `Filter by name or description`); the rotating
+  hints, quick-tag chips, coloured aurora/blobs, rainbow focus ring and click
+  ripple are gone. The field keeps a neutral glass material, pointer specular,
+  spring focus scale and the existing keyboard affordances.
+- **Recent searches and suggestions.** Up to five confirmed queries are kept in
+  local storage; typing also lists name suggestions, and inline Tab completion
+  still works. The popover keeps its spring open/close and item stagger, and the
+  keyboard footer is unchanged.
+- **Arrow keys, Enter and Escape** keep the popover/listbox pattern; recent
+  queries can be removed one by one or cleared together.
+- The panel follows the DSH light/dark theme and its design tokens; the reference
+  page's own theme switch is not duplicated in the panel.
+- Data behaviour (catalog read, enable/disable writes, restore/unconfirmed
+  states, safe uninstall) is unchanged.
+
 ## [0.1.1] — 2026-10-22
 
 ### Changed

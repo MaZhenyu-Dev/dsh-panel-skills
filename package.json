@@ -1,6 +1,6 @@
 {
   "name": "dsh-panel-skills",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "private": true,
   "description": "DSH sidebar panel for Skills: list, enable/disable, and genuinely remove a disabled skill from the catalog.",
   "icon": "assets/icon.svg",
