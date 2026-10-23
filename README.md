@@ -72,9 +72,35 @@ Skill 关闭并不只是从界面隐藏。
 
 - 已安装 DSH 桌面版；
 - 可以使用 DSH 的「插件」管理功能；
-- 当前通过源码目录安装。
+- 能从本机访问 GitHub，或已把仓库克隆到本地。
 
-### 从源码安装
+### 从 GitHub 仓库安装（推荐）
+
+DSH 的「添加插件」接受 Git 地址，无需先克隆到本地：
+
+1. 打开 DSH →「插件」管理；
+2. 选择「添加插件」；
+3. 输入仓库地址：
+
+```text
+https://github.com/MaZhenyu-Dev/dsh-panel-skills
+```
+
+需要固定版本时在末尾追加引用，例如
+`https://github.com/MaZhenyu-Dev/dsh-panel-skills#v0.2.0`；不写则安装默认分支的最新提交。
+
+4. 启用 `dsh-panel-skills`；
+5. 刷新 DSH 页面；
+6. 侧边栏「插件」区域出现 **Skills** 即安装完成。
+
+注意事项：
+
+- 地址不要带末尾斜杠，也不要填 `/tree/main` 这类网页路径，否则会被判为无法识别的地址。
+- 「安装源」下拉框只对 npm 包名生效，填 Git 地址时不需要改动它。
+- 从 Git 安装的是固定快照，升级需先卸载再安装。
+- 包名 `dsh-panel-skills` 尚未发布到 npm，在输入框里直接填短名会提示「未找到相关插件」。
+
+### 从源码安装（开发调试）
 
 ```powershell
 git clone https://github.com/MaZhenyu-Dev/dsh-panel-skills.git

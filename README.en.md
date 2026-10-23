@@ -72,9 +72,36 @@ The code uses cross-platform Node.js APIs; macOS / Linux have not yet been teste
 
 - DSH Desktop is installed;
 - DSH's **Plugins** management is available;
-- The plugin is currently installed from a source directory.
+- GitHub is reachable from this machine, or the repository is already cloned locally.
 
-### Install from source
+### Install from the GitHub repository (recommended)
+
+DSH's **Add plugin** accepts a Git address, so no local clone is needed:
+
+1. Open DSH → **Plugins**;
+2. Choose **Add plugin**;
+3. Enter the repository address:
+
+```text
+https://github.com/MaZhenyu-Dev/dsh-panel-skills
+```
+
+To pin a version, append a ref, for example
+`https://github.com/MaZhenyu-Dev/dsh-panel-skills#v0.2.0`; without one, the latest
+commit on the default branch is installed.
+
+4. Enable `dsh-panel-skills`;
+5. Reload the DSH page;
+6. Once **Skills** appears in the **Plugins** section of the sidebar, installation is complete.
+
+Notes:
+
+- Do not append a trailing slash or use a page path such as `/tree/main`; both are rejected as unrecognized addresses.
+- The **Registry** selector only applies to npm package names; leave it unchanged when entering a Git address.
+- A Git install is a fixed snapshot, so upgrading requires uninstalling and installing again.
+- The name `dsh-panel-skills` is not published to npm yet; entering the bare name reports that no such plugin was found.
+
+### Install from source (development)
 
 ```powershell
 git clone https://github.com/MaZhenyu-Dev/dsh-panel-skills.git
